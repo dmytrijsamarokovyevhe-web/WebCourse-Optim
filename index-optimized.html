@@ -1,0 +1,415 @@
+<!-- Файл "після"-->
+<!DOCTYPE html>
+<!-- OPT-1: lang="uk" замість "en" — мова сторінки збігається з мовою контенту (важливо для голосових асистентів і мовної класифікації) -->
+<html lang="uk">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- OPT-2: унікальний title із послугою, містом і брендом -->
+    <title>СТО в Івано-Франківську — АвтоМайстер: діагностика, заміна масла, розвал-сходження</title>
+    <!-- OPT-3: змістовний meta description з ключовими фактами (послуги, місто, ціни, графік) -->
+    <meta name="description"
+        content="СТО «АвтоМайстер» в Івано-Франківську: заміна масла від 600 грн, комп'ютерна діагностика 500 грн, розвал-сходження 900 грн. Гарантія на роботи. Працюємо пн–сб." />
+    <meta name="author" content="СТО АвтоМайстер" />
+    <!-- OPT-4: canonical і Open Graph (домен умовний, замініть на реальний) -->
+    <link rel="canonical" href="https://avtomaister.example/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="uk_UA" />
+    <meta property="og:title" content="СТО АвтоМайстер — автосервіс в Івано-Франківську" />
+    <meta property="og:description"
+        content="Діагностика, заміна масла, ремонт ходової та розвал-сходження з гарантією." />
+    <meta property="og:url" content="https://avtomaister.example/" />
+
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- OPT-5: preconnect до CDN прискорює завантаження (Core Web Vitals) -->
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet" />
+
+    <!-- OPT-6: структуровані дані Schema.org (JSON-LD) — локальний бізнес.
+             Дані мають збігатися з видимим текстом сторінки (адреса, телефон, графік, ціни). -->
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "AutoRepair",
+          "name": "СТО АвтоМайстер",
+          "url": "https://avtomaister.example/",
+          "telephone": "+380501234567",
+          "email": "info@avtomaister.example",
+          "priceRange": "₴₴",
+          "description": "Автосервіс в Івано-Франківську: комп'ютерна діагностика, заміна масла, ремонт ходової частини, розвал-сходження.",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "вул. Промислова, 12",
+            "addressLocality": "Івано-Франківськ",
+            "postalCode": "76000",
+            "addressCountry": "UA"
+          },
+          "openingHoursSpecification": [
+            {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+              "opens": "08:00",
+              "closes": "19:00"
+            },
+            {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": "Saturday",
+              "opens": "09:00",
+              "closes": "15:00"
+            }
+          ],
+          "areaServed": "Івано-Франківськ",
+          "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Послуги СТО",
+            "itemListElement": [
+              { "@type": "Offer", "price": "600", "priceCurrency": "UAH", "itemOffered": { "@type": "Service", "name": "Заміна масла та масляного фільтра" } },
+              { "@type": "Offer", "price": "500", "priceCurrency": "UAH", "itemOffered": { "@type": "Service", "name": "Комп'ютерна діагностика" } },
+              { "@type": "Offer", "price": "900", "priceCurrency": "UAH", "itemOffered": { "@type": "Service", "name": "Розвал-сходження" } },
+              { "@type": "Offer", "price": "700", "priceCurrency": "UAH", "itemOffered": { "@type": "Service", "name": "Заміна гальмівних колодок (одна вісь)" } }
+            ]
+          }
+        }
+        </script>
+
+    <!-- OPT-7: FAQPage JSON-LD — відповіді дослівно збігаються з блоком FAQ на сторінці.
+             Примітка для курсової: Google обмежив показ FAQ rich results, але розмітка допомагає машинному розумінню контенту. -->
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Скільки коштує заміна масла в Івано-Франківську?",
+              "acceptedAnswer": { "@type": "Answer", "text": "У СТО «АвтоМайстер» робота із заміни масла та масляного фільтра коштує від 600 грн. Вартість масла і фільтра оплачується окремо та залежить від марки автомобіля. Процедура займає близько 40 хвилин." }
+            },
+            {
+              "@type": "Question",
+              "name": "Як часто потрібно міняти масло в двигуні?",
+              "acceptedAnswer": { "@type": "Answer", "text": "Зазвичай масло змінюють кожні 10–15 тисяч кілометрів або раз на рік, залежно від рекомендацій виробника автомобіля та типу масла. У складних умовах експлуатації інтервал варто скоротити." }
+            },
+            {
+              "@type": "Question",
+              "name": "Скільки триває комп'ютерна діагностика авто?",
+              "acceptedAnswer": { "@type": "Answer", "text": "Комп'ютерна діагностика триває близько 30–40 хвилин і коштує 500 грн. Ми зчитуємо коди помилок і пояснюємо результат." }
+            },
+            {
+              "@type": "Question",
+              "name": "Чи є гарантія на виконані роботи?",
+              "acceptedAnswer": { "@type": "Answer", "text": "Так, ми надаємо гарантію на виконані роботи. Умови гарантії уточнюйте у майстра під час оформлення замовлення." }
+            },
+            {
+              "@type": "Question",
+              "name": "Як записатися на СТО?",
+              "acceptedAnswer": { "@type": "Answer", "text": "Зателефонуйте за номером +38 (050) 123-45-67 або залиште заявку у формі на сторінці. Ми працюємо з понеділка по п'ятницю з 08:00 до 19:00 та в суботу з 09:00 до 15:00." }
+            }
+          ]
+        }
+        </script>
+</head>
+
+<body>
+    <!-- OPT-8: посилання «Перейти до змісту» для доступності -->
+    <a class="visually-hidden-focusable" href="#main">Перейти до змісту</a>
+
+    <!-- OPT-9: семантичні теги nav / header / main / section / footer замість div -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Головна навігація">
+        <div class="container px-5">
+            <a class="navbar-brand" href="/">АвтоМайстер</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Відкрити меню"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <!-- OPT-10: реальні якорі замість href="#!" -->
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="#top">Головна</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Послуги</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#prices">Ціни</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#faq">Питання та відповіді</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contacts">Контакти</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="bg-dark py-5" id="top">
+        <div class="container px-5">
+            <div class="row gx-5 justify-content-center">
+                <div class="col-lg-8">
+                    <div class="text-center my-5">
+                        <!-- OPT-11: h1 описує, що це за бізнес і де він -->
+                        <h1 class="display-5 fw-bolder text-white mb-2">СТО в Івано-Франківську: діагностика та ремонт
+                            авто з гарантією</h1>
+                        <!-- OPT-12: перший абзац — конкретна відповідь «хто ми, що робимо, де, за скільки» -->
+                        <p class="lead text-white-50 mb-4">АвтоМайстер — автосервіс за адресою вул. Промислова, 12.
+                            Виконуємо заміну масла від 600 грн, комп'ютерну діагностику за 500 грн, ремонт ходової та
+                            розвал-сходження. Працюємо щодня, крім неділі.</p>
+                        <div class="d-grid gap-3 d-sm-flex justify-content-sm-center">
+                            <!-- OPT-13: клікабельний телефон (tel:) — основа для голосового дзвінка «зателефонуй на СТО» -->
+                            <a class="btn btn-primary btn-lg px-4 me-sm-3" href="tel:+380501234567">Зателефонувати: +38
+                                (050) 123-45-67</a>
+                            <!-- OPT-14: описові тексти посилань замість «Дізнатися більше» -->
+                            <a class="btn btn-outline-light btn-lg px-4" href="#prices">Дивитися ціни на послуги</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main id="main">
+        <!-- Services -->
+        <section class="py-5 border-bottom" id="services" aria-labelledby="services-title">
+            <div class="container px-5 my-5">
+                <!-- OPT-15: правильна ієрархія h1 → h2 → h3 -->
+                <h2 class="fw-bolder text-center mb-5" id="services-title">Які послуги надає СТО «АвтоМайстер»</h2>
+                <div class="row gx-5">
+                    <div class="col-lg-4 mb-5 mb-lg-0">
+                        <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-tools"
+                                aria-hidden="true"></i></div>
+                        <h3 class="h4 fw-bolder">Технічне обслуговування</h3>
+                        <p>Заміна моторного масла та фільтрів (масляного, повітряного, салонного), перевірка рівня
+                            технічних рідин та огляд ходової частини. Заміна масла займає близько 40 хвилин.</p>
+                        <a class="text-decoration-none" href="#prices">
+                            Ціни на технічне обслуговування
+                            <i class="bi bi-arrow-right" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 mb-5 mb-lg-0">
+                        <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i
+                                class="bi bi-speedometer2" aria-hidden="true"></i></div>
+                        <h3 class="h4 fw-bolder">Діагностика автомобіля</h3>
+                        <p>Комп'ютерна діагностика двигуна та електроніки (30–40 хвилин) і діагностика ходової частини.
+                            Після перевірки майстер пояснює результат і називає вартість ремонту до початку робіт.</p>
+                        <a class="text-decoration-none" href="#prices">
+                            Ціни на діагностику
+                            <i class="bi bi-arrow-right" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-gear"
+                                aria-hidden="true"></i></div>
+                        <h3 class="h4 fw-bolder">Ремонт ходової та гальм</h3>
+                        <p>Заміна гальмівних колодок, регулювання розвалу-сходження та ремонт підвіски. На виконані
+                            роботи діє гарантія.</p>
+                        <a class="text-decoration-none" href="#contacts">
+                            Записатися на ремонт ходової
+                            <i class="bi bi-arrow-right" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Prices -->
+        <section class="bg-light py-5 border-bottom" id="prices" aria-labelledby="prices-title">
+            <div class="container px-5 my-5">
+                <div class="text-center mb-5">
+                    <h2 class="fw-bolder" id="prices-title">Ціни на послуги СТО в Івано-Франківську</h2>
+                    <p class="lead mb-0">Вартість роботи майстра. Запчастини та матеріали оплачуються окремо.</p>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-9">
+                        <!-- OPT-16: ціни у семантичній таблиці (table, caption, th scope) — машинозчитувані -->
+                        <div class="table-responsive">
+                            <table class="table table-striped bg-white">
+                                <caption class="visually-hidden">Ціни на послуги СТО АвтоМайстер</caption>
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Послуга</th>
+                                        <th scope="col">Тривалість</th>
+                                        <th scope="col">Ціна роботи</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">Заміна масла та масляного фільтра</th>
+                                        <td>близько 40 хв</td>
+                                        <td>від 600 грн</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Комп'ютерна діагностика</th>
+                                        <td>30–40 хв</td>
+                                        <td>500 грн</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Діагностика ходової частини</th>
+                                        <td>близько 30 хв</td>
+                                        <td>400 грн</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Заміна гальмівних колодок (одна вісь)</th>
+                                        <td>близько 1 год</td>
+                                        <td>від 700 грн</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Розвал-сходження</th>
+                                        <td>близько 1 год</td>
+                                        <td>900 грн</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <p class="small text-muted mb-0">Остаточну вартість майстер називає після огляду автомобіля.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <!-- OPT-17: FAQ у форматі «питання — коротка відповідь». Заголовки — реальні розмовні запити,
+                 які користувачі кажуть голосом і вводять у Perplexity / Google. details/summary працює без JS і доступний краулерам. -->
+        <section class="py-5 border-bottom" id="faq" aria-labelledby="faq-title">
+            <div class="container px-5 my-5">
+                <h2 class="fw-bolder text-center mb-5" id="faq-title">Часті питання про СТО та ремонт авто</h2>
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <details class="mb-3" open>
+                            <summary class="h5 fw-bold">Скільки коштує заміна масла в Івано-Франківську?</summary>
+                            <p class="mt-2">У СТО «АвтоМайстер» робота із заміни масла та масляного фільтра коштує від
+                                600 грн. Вартість масла і фільтра оплачується окремо та залежить від марки автомобіля.
+                                Процедура займає близько 40 хвилин.</p>
+                        </details>
+                        <details class="mb-3">
+                            <summary class="h5 fw-bold">Як часто потрібно міняти масло в двигуні?</summary>
+                            <p class="mt-2">Зазвичай масло змінюють кожні 10–15 тисяч кілометрів або раз на рік, залежно
+                                від рекомендацій виробника автомобіля та типу масла. У складних умовах експлуатації
+                                інтервал варто скоротити.</p>
+                        </details>
+                        <details class="mb-3">
+                            <summary class="h5 fw-bold">Скільки триває комп'ютерна діагностика авто?</summary>
+                            <p class="mt-2">Комп'ютерна діагностика триває близько 30–40 хвилин і коштує 500 грн. Ми
+                                зчитуємо коди помилок і пояснюємо результат.</p>
+                        </details>
+                        <details class="mb-3">
+                            <summary class="h5 fw-bold">Чи є гарантія на виконані роботи?</summary>
+                            <p class="mt-2">Так, ми надаємо гарантію на виконані роботи. Умови гарантії уточнюйте у
+                                майстра під час оформлення замовлення.</p>
+                        </details>
+                        <details class="mb-3">
+                            <summary class="h5 fw-bold">Як записатися на СТО?</summary>
+                            <p class="mt-2">Зателефонуйте за номером +38 (050) 123-45-67 або залиште заявку у формі на
+                                сторінці. Ми працюємо з понеділка по п'ятницю з 08:00 до 19:00 та в суботу з 09:00 до
+                                15:00.</p>
+                        </details>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section class="py-5 border-bottom" aria-labelledby="reviews-title">
+            <div class="container px-5 my-5">
+                <div class="text-center mb-5">
+                    <h2 class="fw-bolder" id="reviews-title">Відгуки клієнтів СТО АвтоМайстер</h2>
+                </div>
+                <div class="row gx-5 justify-content-center">
+                    <div class="col-lg-6">
+                        <!-- OPT-18: відгуки в семантичному blockquote з автором (E-E-A-T: соціальний доказ) -->
+                        <figure class="card mb-4">
+                            <div class="card-body p-4">
+                                <div class="d-flex">
+                                    <div class="flex-shrink-0"><i class="bi bi-chat-right-quote-fill text-primary fs-1"
+                                            aria-hidden="true"></i></div>
+                                    <div class="ms-4">
+                                        <blockquote class="mb-1">Замінили масло і зробили діагностику за один візит, усе
+                                            пояснили і назвали ціну наперед. Обов'язково порекомендую знайомим.
+                                        </blockquote>
+                                        <figcaption class="small text-muted">— Іван, Івано-Франківськ</figcaption>
+                                    </div>
+                                </div>
+                            </div>
+                        </figure>
+                        <figure class="card">
+                            <div class="card-body p-4">
+                                <div class="d-flex">
+                                    <div class="flex-shrink-0"><i class="bi bi-chat-right-quote-fill text-primary fs-1"
+                                            aria-hidden="true"></i></div>
+                                    <div class="ms-4">
+                                        <blockquote class="mb-1">Привітний персонал, швидко зробили розвал-сходження.
+                                            Звернуся ще раз, коли знадобиться допомога з автомобілем.</blockquote>
+                                        <figcaption class="small text-muted">— Олена, Івано-Франківськ</figcaption>
+                                    </div>
+                                </div>
+                            </div>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contacts -->
+        <section class="bg-light py-5" id="contacts" aria-labelledby="contacts-title">
+            <div class="container px-5 my-5">
+                <div class="text-center mb-5">
+                    <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-envelope"
+                            aria-hidden="true"></i></div>
+                    <h2 class="fw-bolder" id="contacts-title">Контакти СТО АвтоМайстер в Івано-Франківську</h2>
+                    <p class="lead mb-0">Зателефонуйте або залиште заявку — ми передзвонимо</p>
+                </div>
+                <div class="row gx-5 justify-content-center">
+                    <div class="col-lg-5 mb-5 mb-lg-0">
+                        <!-- OPT-19: NAP-блок (Name, Address, Phone) у тексті, у тому ж вигляді, що й у JSON-LD та Google Business Profile -->
+                        <address>
+                            <p class="mb-2"><strong>СТО «АвтоМайстер»</strong></p>
+                            <p class="mb-2">Адреса: вул. Промислова, 12, Івано-Франківськ, 76000</p>
+                            <p class="mb-2">Телефон: <a href="tel:+380501234567">+38 (050) 123-45-67</a></p>
+                            <p class="mb-2">Email: <a
+                                    href="mailto:info@avtomaister.example">info@avtomaister.example</a></p>
+                        </address>
+                        <h3 class="h5 fw-bold mt-4">Графік роботи</h3>
+                        <ul class="list-unstyled">
+                            <li>Понеділок–п'ятниця: 08:00–19:00</li>
+                            <li>Субота: 09:00–15:00</li>
+                            <li>Неділя: вихідний</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6">
+                        <!-- OPT-20: форма з прив'язаними label, autocomplete та required (доступність, UX) -->
+                        <form id="contactForm" action="#" method="post">
+                            <div class="form-floating mb-3">
+                                <input class="form-control" id="name" name="name" type="text" placeholder="Ваше ім'я"
+                                    autocomplete="name" required />
+                                <label for="name">Ім'я</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input class="form-control" id="email" name="email" type="email"
+                                    placeholder="name@example.com" autocomplete="email" required />
+                                <label for="email">Email</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input class="form-control" id="phone" name="phone" type="tel"
+                                    placeholder="+38 (050) 123-45-67" autocomplete="tel" required />
+                                <label for="phone">Телефон</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <textarea class="form-control" id="message" name="message"
+                                    placeholder="Опишіть проблему або послугу" style="height: 10rem"
+                                    required></textarea>
+                                <label for="message">Що потрібно зробити з автомобілем</label>
+                            </div>
+                            <div class="d-grid"><button class="btn btn-primary btn-lg" id="submitButton"
+                                    type="submit">Надіслати заявку на ремонт</button></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="py-5 bg-dark">
+        <div class="container px-5">
+            <p class="m-0 text-center text-white">&copy; 2026 СТО «АвтоМайстер», Івано-Франківськ</p>
+        </div>
+    </footer>
+
+    <!-- OPT-21: скрипти з defer — не блокують рендеринг; зовнішній sb-forms прибрано (форма не використовує його) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" defer></script>
+    <script src="js/scripts.js" defer></script>
+</body>
+
+</html>
